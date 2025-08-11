@@ -1,6 +1,3 @@
-% Jurassic Park Knowledgebase - Corrected Version
-% Author: Claude (Corrections Applied)
-% Load into SWI-Prolog: ?- [jurassic_park].
 
 %%% Facts: Dinosaurs
 % dino(Name, Species, Diet, Size, Era).
@@ -295,4 +292,5 @@ all_dangerous(List) :-
 %%% Example: feeding_chain/2
 feeding_chain(Pred, PreyList) :-
     setof(Prey, predator_chain(Pred, Prey), PreyList), !.
+
 feeding_chain(_, []).
