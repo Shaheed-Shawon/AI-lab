@@ -1,7 +1,7 @@
 
 %%% Facts: Dinosaurs
 % dino(Name, Species, Diet, Size, Era).
-dino(raptor1, velociraptor, carnivore, small, cretaceous).  % More accurate size
+dino(raptor1, velociraptor, carnivore, small, cretaceous). 
 dino(raptor2, velociraptor, carnivore, small, cretaceous).
 dino(raptor3, velociraptor, carnivore, small, cretaceous).
 
@@ -213,7 +213,7 @@ predator(velociraptor, pachycephalosaurus).
 predator(velociraptor, archaeopteryx).
 
 % Omnivore
-predator(archaeopteryx, heterodontosaurus).  % small prey only
+predator(archaeopteryx, heterodontosaurus). 
 
 
 
@@ -294,3 +294,4 @@ feeding_chain(Pred, PreyList) :-
     setof(Prey, predator_chain(Pred, Prey), PreyList), !.
 
 feeding_chain(_, []).
+
